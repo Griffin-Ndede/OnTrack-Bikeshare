@@ -1,0 +1,42 @@
+body{
+    font-family: 'Comfortaa', cursive;
+}
+#logo{
+    font-size: 30px;
+    font-weight: bolder;
+}
+span{
+    color: #00dd00;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding-top: 30px;
+    padding-left: 5%;
+    padding-right: 5%; 
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 15px;
+}
+nav ul li:hover{
+    color: #00dd00;
+    cursor: pointer;
+}
+#sign-up{
+    color: white;
+    background-color: #00dd00;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 5px;
+}
+#sign-up:hover{
+    color: black;
+    transform: scale(1.2);
+    background-color: white;
+    border: 1px solid black;
+}
