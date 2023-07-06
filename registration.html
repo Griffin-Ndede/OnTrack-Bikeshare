@@ -3,12 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <title>Sign up/login</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-    
+    <div id="container">
+        <form id="login">
+            <h1 id="title">Login</h1>
+            <div id="error1">Incorrect username/password</div>
+            <div id="input1">
+                <input type="text" id="email" placeholder="Username or email">
+                <div id="error2">this is an error message</div>
+            </div>
+            <div id="input2">
+                <input type="password" id="password" placeholder="Password">
+                <div id="error3">this is an error message</div>
+            </div>
+            <button id="login" type="submit">Continue</button>
+            <p id="text">
+                <a href="" id="Forgot-password">Forgot password</a>
+            </p>
+            <p id="text">
+                <a href="" id="create-account"> Don't have an account? Create account</a>
+            </p>
+        </form>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
