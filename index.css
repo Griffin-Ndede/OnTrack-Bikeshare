@@ -138,3 +138,88 @@ nav ul li:hover{
 
 
 /* styling for registration html file */
+#body2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive;
+}
+.form-hidden{
+    display: none;
+}
+#container{
+    display: inline-flex;
+    font-size: 20px;
+    width: 800px;
+    margin: 20px; 
+    padding: 40px;
+    box-shadow: 0 0 40px black;
+    border-radius: 30px;
+    background-color:white;
+}
+#bike img{
+    border-radius: 30px;
+    margin: 0 25px 0 100px;
+}
+#login #title{
+    font-size: 25px;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#login #error1,
+#error2, #error3{
+    font-size: 15px;
+    width: fit-content;
+    margin-bottom: 20px 0 20px 0;
+    color: red;
+}
+#login #input1 #email, #password{
+    font-size:15px;
+    color: black;
+    margin: 20px 0;
+    background-color: transparent;
+    border-radius: 20px;
+    border: transparent;
+    box-shadow: 0 0 10px black;
+    padding: 10px;
+}
+#login #input1 #email, #password:hover{
+    color: black;
+}
+#login #loginbutton{
+    font-size:15px;
+    color: black;
+    margin: 20px 0;
+    background-color: transparent;
+    border-radius: 20px;
+    border: transparent;
+    box-shadow: 0 0 10px black;
+    padding: 7.5px;
+}
+#login #loginbutton:hover{
+    background-color: #00dd00;
+    color: white;
+    cursor: pointer;
+}
+#login #loginbutton:active{
+    transform: scale(0.9);
+}
+#login #Forgot-password, #create-account{
+    font-size: 15px;
+    color: black;
+    margin: 20px 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+#login  #create-account:hover{
+    text-decoration: underline;
+}
+#login #Forgot-password:hover{
+    text-decoration: underline;
+}
+#login p{
+    font-size: 15px;
+    text-align: center;
+}
+
