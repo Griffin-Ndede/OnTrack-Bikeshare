@@ -137,7 +137,7 @@ nav ul li:hover{
 
 
 
-/* styling for registration html file */
+/* styling for login page */
 #body2{
     display: flex;
     align-items: center;
@@ -223,3 +223,59 @@ nav ul li:hover{
     text-align: center;
 }
 
+/* style for create account page */
+#createaccount #title{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 20px;
+}
+#createaccount #error1,
+#error2, #error3{
+    font-size: 15px;
+    width: fit-content;
+    margin-bottom: 20px 0 20px 0;
+    color: red;
+}
+#createaccount #input1 #username, #address, #password1, #password2{
+    font-size:15px;
+    color: black;
+    margin: 20px 0;
+    background-color: transparent;
+    border-radius: 20px;
+    border: transparent;
+    box-shadow: 0 0 10px black;
+    padding: 10px;
+}
+#createaccount #input1 #address, #password1, #password2:hover{
+    color: black;
+}
+#createaccount #account{
+    font-size:15px;
+    color: black;
+    margin: 20px 0;
+    background-color: transparent;
+    border-radius: 20px;
+    border: transparent;
+    box-shadow: 0 0 10px black;
+    padding: 7.5px;
+}
+#createaccount #account:hover{
+    background-color: #00dd00;
+    color: white;
+    cursor: pointer;
+}
+#createaccount #account:active{
+    transform: scale(0.9);
+}
+#createaccount #signin{
+    font-size: 15px;
+    color: black;
+    margin: 20px 0;
+    text-decoration: none;
+}
+#createaccount  #signin:hover{
+    text-decoration: underline;
+}
+#createaccount p{
+    font-size: 15px;
+}
