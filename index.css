@@ -1,4 +1,4 @@
-body{
+#body1{
     font-family: 'Comfortaa', cursive;
 }
 #logo{
@@ -89,7 +89,7 @@ nav ul li:hover{
     color: #00dd00;
     font-size: 40px;
 }
-button{
+#Ride{
     background-color: transparent;
     color:black;
     border-radius: 30px;
@@ -133,9 +133,6 @@ button{
     font-size: 40px;
     margin-left: 25px;
 }
-/* #instructions div {
-    display: inline-flex;
-} */
 
 
 
