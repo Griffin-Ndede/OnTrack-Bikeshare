@@ -90,17 +90,22 @@ nav ul li:hover{
     font-size: 40px;
 }
 button{
-    background-color: #00dd00;
-    color: white;
+    background-color: transparent;
+    color:black;
     border-radius: 30px;
     border: transparent;
-    padding: 5px;
+    padding: 10px;
     margin-top: 40px;
+    box-shadow: 5px 5px 10px black;
 }
-/* #section2 {
+#page2 {
     display: inline-flex;
-    background-color: rgb(224, 224, 224);
-    background: cover;
+    width: 100%;
+}
+#heading{
+    font-size: 40px;
+    text-align: center;
+    color: #00dd00;
 }
 #section2 #app{
     margin-left: 200px;
@@ -108,12 +113,26 @@ button{
 #section2 #instructions h2{
     font-size: 25px;
     font-weight: bolder;
-
-}
-#heading{
-    font-size: 50px;
-    text-align: center;
+    width: fit-content;
+    cursor: pointer;
 }
 #section2 #instructions h2:hover{
     color: #00dd00;
+}
+#section2 #instructions h2{
+    width: fit-content;
+    /* margin: 25px; */
+    margin-left: 50px;
+}
+#section2 #instructions p{
+    width: fit-content;
+    margin-left: 50px ;
+}
+#section2 #instructions i{
+    color: #00dd00;
+    font-size: 40px;
+    margin-left: 25px;
+}
+/* #instructions div {
+    display: inline-flex;
 } */
