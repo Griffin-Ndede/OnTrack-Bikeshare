@@ -16,6 +16,9 @@ nav{
     padding-left: 5%;
     padding-right: 5%; 
 }
+nav ul{
+    margin-left: 400px;
+}
 nav ul li{
     display: inline-block;
     list-style-type: none;
@@ -45,4 +48,51 @@ nav ul li:hover{
     color: blue;
     font-size: 50px;
     font-weight: lighter;
+}
+#page1 div img{
+    margin-left: 400px;
+    border-radius: 150px 50px;
+}
+#page1{
+    display: inline-flex;
+}
+#content{
+    margin-left: 50px;
+}
+#content h2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+#content h3{
+    font-size: 15px;
+    font-weight: lighter;
+}
+#ebike{
+    margin-left: 500px;
+}
+#features{
+    display: inline-flex;
+    text-align: center;
+}
+#features div{
+    margin: 40px 60px;
+}
+#features div h3{
+    font-size: 15px;
+    color: black;
+    font-weight: lighter;
+    padding: 5px;
+    margin-top: 50px;
+}
+#features div i{
+    color: #00dd00;
+    font-size: 40px;
+}
+button{
+    background-color: #00dd00;
+    color: white;
+    border-radius: 30px;
+    border: transparent;
+    padding: 5px;
+    margin-top: 40px;
 }
