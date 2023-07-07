@@ -1,4 +1,4 @@
-fetch("http://localhost:3000/users")
+fetch("https://user-profiles-jgk3.onrender.com/users")
 .then(response => response.json())
 .then(data => {
     console.log(data);
@@ -6,7 +6,7 @@ fetch("http://localhost:3000/users")
 const displayUsers = document.getElementById('usernames')
 data.forEach((users) => {
     const displayNames = document.createElement('li')
-    displayNames.textContent = users.name
+    displayNames.textContent = users.email, users.name
 
     displayUsers.appendChild(displayNames);
     })

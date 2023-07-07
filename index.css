@@ -287,3 +287,20 @@ nav ul li:hover{
 #createaccount p{
     font-size: 15px;
 }
+/* styling for user profiles page */
+
+#body1 h1{
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 30px 0;
+    text-align: center;
+}
+#body1 #usernames li{
+    margin: 15px;
+    font-size: 15px;
+    width: fit-content;
+}
+#body1 #usernames li:hover{
+    color: #00dd00;
+    cursor: pointer;
+}
