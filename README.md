@@ -15,8 +15,6 @@ Reference
 
 Licence
 
-Authors info
-
 # Description
 The program is supposed to 
 The index.html file opens up to the main page of the website. On the navigation bar the sign up button has a link that takes you to the registration page where you can sign up or create an account to be able to use the bikeshare service. 
