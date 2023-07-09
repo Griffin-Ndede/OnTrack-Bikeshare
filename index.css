@@ -304,3 +304,7 @@ nav ul li:hover{
     color: #00dd00;
     cursor: pointer;
 }
+
+#registration-form, #userProfiles{
+    height: 100vh;
+}
