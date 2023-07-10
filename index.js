@@ -58,3 +58,42 @@ data.forEach((users) => {
 .catch(error => {
     console.log('Error:', error);
 })
+    const form = document.getElementById('registration');
+    const name = document.getElementById('name');
+    const username = document.getElementById('username');
+    const email = document.getElementById('email');
+    const gender = document.getElementById('gender');
+    const profilepicture = document.getElementById('profilepicture');
+    const evehicle = document.getElementById('evehicle');;
+    const submitbtn = document.getElementById('submit')
+// POST request
+
+// form.addEventListener('submit', formSubmit)
+document.getElementById('registration').addEventListener('submit', formSubmit);
+
+
+function formSubmit(e){
+    e.preventDefault()
+    let userObj = {
+        name: e.target.name.value,
+        username: e.target.username.value,
+        email: e.target.email.value,
+        gender: e.target.gender.value,
+        profilepicture: e.target.profilepicture.value,
+        evehicle: e.target.evehicle.value,
+    }
+    newUserName(userObj);
+    console.log(userObj);
+}
+function newUserName(userObj){
+
+    fetch('https://user-profiles-jgk3.onrender.com/users', {
+        method: 'POST', 
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body:JSON.stringify(userObj)
+    })
+    .then(res => res.json())
+    .then(userObj => console.log(userObj))
+}
