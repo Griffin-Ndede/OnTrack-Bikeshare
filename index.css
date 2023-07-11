@@ -103,6 +103,10 @@ nav ul li a:hover{
     margin-top: 40px;
     box-shadow: 5px 5px 10px black;
     font-family: 'Comfortaa', cursive;
+    
+}
+#Ride a{
+    text-decoration: none;
 }
 #section1{
     background-color: #d5ffd5;
