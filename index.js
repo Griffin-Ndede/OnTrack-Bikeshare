@@ -1,59 +1,91 @@
 
-fetch("https://ontrack-server.onrender.com/users")
-.then(response => response.json())
-.then(data => {
+// Fetch data for user 1 from the server
+fetch("https://ontrack-server.onrender.com/users/1")
+  .then(response => response.json())
+  .then(data => {
     console.log(data);
 
-    // display the users list
-const displayUsers = document.getElementById('usernames')
-data.forEach((users) => {
-    const displayNames = document.createElement('li')
-    displayNames.textContent = users.name
+    // Display user 1 details as default
+    const displayUsers = document.getElementById('display');
+    const user1 = document.createElement('div');
+    user1.innerHTML = `
+      <div>
+          <img src="${data.profilePicture}" alt="Profile picture" id="pp">
+      </div>
+      <div id="name">
+          <h2>Name: ${data.name}</h2>
+      </div>
+      <div id="username">
+          <h2>Username: ${data.username}</h2>
+      </div>
+      <div id="email">
+          <h2>Email: ${data.email}</h2>
+      </div>
+      <div id="gender">
+          <h2>Gender: ${data.gender}</h2>
+      </div>
+      <div id="vehicle">
+          <h2>Preferred vehicle: ${data.eVehicle}</h2>
+      </div>
+    `;
+    // Ensure that user 1 is always displayed by default
+    displayUsers.innerHTML = user1.innerHTML;
+  })
+  .catch(error => {
+    console.log('Error:', error);
+  });
 
-    displayUsers.appendChild(displayNames);
+// Fetch data from the server for all users
+fetch("https://ontrack-server.onrender.com/users")
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
 
-    // displaying the details of the users
-    displayNames.addEventListener('click', () => {
-    const displayDetails = document.getElementById("usernames")
-    const display1 = document.createElement("div")
-    display1.innerHTML =`
-    <div id = "pp">
-        <img src= "${users.gender}" alt = "Profile picture">
-    </div>
-    <div id = "name">
-        <h2>
-           Name: ${users.name}
-        </h2>
-    </div>
-    <div id = "username">
-        <h2>
-            Username: ${users.username}
-        </h2>
-    </div>
-    <div id = "email">
-        <h2>
-            Email: ${users.email}
-        </h2>
-    </div>
-    <div id = "gender">
-        <h2>
-            Gender: ${users.gender}
-        </h2>
-    </div>
-    <div id = "vehicle">
-        <h2>
-            Preferred vehicle: ${users.eVehicle}
-        </h2>
-    </div>
-    `
-    displayDetails.innerHTML = display1.innerHTML
-        })
-    })
-})
+    // Display the users list
+    const displayUsers = document.getElementById('usernames');
+    data.forEach(user => {
+      const displayNames = document.createElement('li');
+      displayNames.textContent = user.name;
+
+      displayUsers.appendChild(displayNames);
+
+      // Display the details of the selected user
+      displayNames.addEventListener('click', () => {
+        const displayDetails = document.getElementById("display");
+        const userDetails = document.createElement("div");
+        userDetails.innerHTML = `
+          <div>
+              <img src="${user.profilePicture}" alt="Profile picture" id="pp">
+          </div>
+          <div id="name">
+              <h2>Name: ${user.name}</h2>
+          </div>
+          <div id="username">
+              <h2>Username: ${user.username}</h2>
+          </div>
+          <div id="email">
+              <h2>Email: ${user.email}</h2>
+          </div>
+          <div id="gender">
+              <h2>Gender: ${user.gender}</h2>
+          </div>
+          <div id="vehicle">
+              <h2>Preferred vehicle: ${user.eVehicle}</h2>
+          </div>
+        `;
+        displayDetails.innerHTML = userDetails.innerHTML;
+      });
+    });
+  })
+  .catch(error => {
+    console.log('Error:', error);
+  })
 
 .catch(error => {
     console.log('Error:', error);
 });
+
+// POST request
     const form = document.getElementById('registration');
     const name = document.getElementById('name');
     const username = document.getElementById('username');
@@ -64,7 +96,7 @@ data.forEach((users) => {
     const submitbtn = document.getElementById('submit')
 
 
-// POST request
+
 
 // form.addEventListener('submit', formSubmit)
 document.getElementById('registration').addEventListener('submit', formSubmit);

@@ -298,6 +298,9 @@ nav ul li a:hover{
 }
 /**************************** styling for user profiles page ***********************/
 
+#usersDisplay{
+    display: inline-flex;
+}
 #registration input{
     font-size:15px;
     color: black;
@@ -309,6 +312,15 @@ nav ul li a:hover{
 }
 #registration #submit{
     margin-top: 20px;
+}
+#registration #submit:active{
+    transform: scale(0.95);
+    color:white;
+    background-color: #00dd00;
+}
+#registration #submit:hover{
+    color:white;
+    background-color: #00dd00;
 }
 #section5{
     height: 100vh;
