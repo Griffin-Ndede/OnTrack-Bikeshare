@@ -234,7 +234,7 @@ nav ul li a:hover{
 /**************************style for create account page *************************/
 #section0{
     height: 100vh;
-    background-color: #d5ffd5;
+    background-color: #00dd00;
 }
 #createaccount #title{
     font-size: 30px;
@@ -310,6 +310,15 @@ nav ul li a:hover{
     box-shadow: 0 0 10px black;
     padding: 7.5px;
 }
+#display div h2{
+    font-size: 15px;
+    font-weight: lighter;
+}
+#display #pp{
+    height: auto;
+    width: 600px;
+    border-radius: 100px;
+}
 #registration #submit{
     margin-top: 20px;
 }
@@ -325,7 +334,7 @@ nav ul li a:hover{
 #section5{
     height: 100vh;
     margin: 0;
-    /* background-color: #d5ffd5; */
+    background-color: #d5ffd5;
 }
 #registration{
     text-align: center;
@@ -344,17 +353,27 @@ nav ul li a:hover{
     margin: 30px;
     font-size: 15px;
     width: fit-content;
+    font-weight: bolder;
 }
 #usernames li:hover{
     color: #00dd00;
     cursor: pointer;
 }
-#userdisplays h1{
+#usersDisplay{
+    margin: 40px;
+}
+#usersDisplay h1{
+    text-align: center;
+}
+#display{
+    margin-left: 200px;
+}
+/* #userdisplays h1{
     font-size: 30px;
     font-weight: bolder;
     margin: 30px 0;
     text-align: center;
-}
+} */
 #section3{
     height: 100vh;
     margin: 0;
@@ -367,8 +386,8 @@ nav ul li a:hover{
 
 /**************************styling the footer ******************************************/
 #section4{
-    background-color: #00dd00;
-    color: white;
+    background-color: #d5ffd5;
+    color: black;
     text-align: center;
 }
 #footer{
