@@ -21,12 +21,12 @@ nav{
     padding-right: 5%; 
 }
 nav ul{
-    margin-left: 300px;
+    margin-left: 200px;
 }
 nav ul li{
     display: inline-block;
     list-style-type: none;
-    padding: 10px 25px;
+    padding: 10px 15px;
     cursor: pointer;
     font-size: 15px;
 }
