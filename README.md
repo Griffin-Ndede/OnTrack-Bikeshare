@@ -16,9 +16,7 @@ Reference
 Licence
 
 # Description
-The program is supposed to 
-The index.html file opens up to the main page of the website. On the navigation bar the sign up button has a link that takes you to the registration page where you can sign up or create an account to be able to use the bikeshare service. 
-The user profiles on the navigation bar takes you to a different page that displays the users information.
+The program is supposed to display the bikeshare platform and its different features. Clicking on the navigation items takes you to the specific location of the navigation item. On the user profile page, clicking on a user's name opens the user's profile. There is also a registration form for new users. The sign in button takes you to the login page and clicking on the create account toggles between the login page and the create account page. 
 
 # Installation requirement
 Either a computer,phone,tablet or an Ipad
@@ -32,7 +30,7 @@ HTML - to structure the different pages that are present in the program
 
 CSS - to style the different html pages
 
-Javascript - to display the user profile information on the user profile page
+Javascript - to display the user profile information on the user profile page and add event listeners to the buttons on the page.
 
 
 ## References
@@ -40,7 +38,7 @@ Fonts https://fonts.google.com/
 
 Icons https://fontawesome.com/
 
-Server https://user-profiles-jgk3.onrender.com
+Server https://studentprofile.onrender.com/student
 
 
 ## License
