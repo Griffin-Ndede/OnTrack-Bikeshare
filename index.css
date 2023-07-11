@@ -95,7 +95,7 @@ nav ul li a:hover{
     font-size: 40px;
 }
 #Ride{
-    background-color: transparent;
+    background-color: white;
     color:black;
     border-radius: 30px;
     border: transparent;
@@ -232,6 +232,9 @@ nav ul li a:hover{
 }
 
 /**************************style for create account page *************************/
+#section0{
+    height: 100vh;
+}
 #createaccount #title{
     font-size: 30px;
     color: black;
@@ -306,10 +309,10 @@ nav ul li a:hover{
 #registration #submit{
     margin-top: 20px;
 }
-#section3{
+#section5{
     height: 100vh;
     margin: 0;
-    background-color: #d5ffd5;
+    /* background-color: #d5ffd5; */
 }
 #registration{
     text-align: center;
@@ -323,7 +326,7 @@ nav ul li a:hover{
     color: #00dd00;
 }
 #usernames li{
-    margin: 15px;
+    margin: 30px;
     font-size: 15px;
     width: fit-content;
 }
@@ -343,7 +346,7 @@ nav ul li a:hover{
     background-color: #d5ffd5;
 }
 
-/* styling the footer */
+/**************************styling the footer ******************************************/
 #section4{
     background-color: #00dd00;
     color: white;
@@ -372,6 +375,6 @@ nav ul li a:hover{
     padding: 0 0 20px 0;
     letter-spacing: 2px;
 }
-section4{
+#section4{
     height: 25vh;
 }
