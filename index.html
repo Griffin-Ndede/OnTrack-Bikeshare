@@ -11,14 +11,15 @@
     <title>Bikeshare</title>
 </head>
 <body id="body1">
+   
     <section id="section1">
        <div>
         <nav>
             <h1 id="logo">OnTrack<span> Bikeshare</span></h1>
             <ul>
                 <li>About us</li>
-                <li>Why us</li>
-                <li><a href="users.html" id="users">User profiles</a></li>
+                <li><a href="#section2">How to ride</a></li>
+                <li><a href="#section3">User profiles</a></li>
             </ul>
             <a href="registration.html" id="sign-up">Sign up</a>
         </nav>
@@ -57,6 +58,9 @@
         </div>
        </div>
     </section>
+
+      <!-- *******************************How to ride ********************************* -->
+
     <section id="section2">
         <div>
             <h1 id="heading">How to ride an e-scooter or e-bike</h1>
@@ -89,9 +93,57 @@
             <img src="images/Citi-Bike-in-Lyft-app-screenshots.png" width= "auto" height="400px"alt="bikeshare_app">
         </div>
         </div>
-        
     </section>
-    <footer footer>
+    <section id="section3">
+        <section id="registration-form">
+            <form id="registration">
+                <input type="text" id="name" placeholder="name"><br><br>
+                <input type="text" id="username" placeholder="Username"><br><br>
+                <input type="text" id="email" placeholder="email address"><br><br>
+                <input type="text" id="gender" placeholder="gender"><br><br>
+                <input type="text" id="profilepicture" placeholder="profilepicture"><br><br>
+                <input type="text" id="evehicle" placeholder="eVehicle"><br><br>
+                <input type="submit" value="Add user" id="submit">
+            </form>
+        </section id = "userProfiles">
+        <section id="usersDisplay">
+            <div>
+                <h1>User profiles</h1>
+                <ul id="usernames"></ul>
+            </div>
+        </section>
+    </section>
+    <!-- *********************************create account/ sign in**************************** -->
+    <section id="section0">
+        <div id="container">
+            <form id="login">
+                <h1 id="title">Login</h1>
+                <div id="error1"></div>
+                <div id="input1">
+                    <input type="text" id="email" placeholder="Username or email">
+                    <div id="error2"></div>
+                </div>
+                <div>
+                    <input type="password" id="password" placeholder="Password">
+                    <div id="error3"></div>
+                </div>
+                <button id="loginbutton" type="submit">Continue</button>
+                <p id="text">
+                    <a href="" id="Forgot-password">Forgot password</a>
+                </p>
+                <p id="text">
+                    <a href="#" id="create-account"> Don't have an account? Create account</a>
+                </p>
+            </form>
+            <div id="bike">
+                <img src="images/img_0100 (1).JPG" width="350px" height="auto" alt="ebike">
+            </div>
+        </div>
+    </section>
+
+     <!-- ************************************** footer ************************************** -->
+    <section id="section3">
+        <footer id="footer">
         <div id="aboutus">
             <h3>About us</h3>
             <ul>
@@ -100,17 +152,28 @@
                 <li>Our Team</li>
             </ul>
         </div>
-        <div id="Contact">
+        <div id="contact">
             <h3>Contact us</h3>
             <ul>
-                <li>Location:Nairobi Kenya</li>
+                <li>Location: Nairobi, Kenya</li>
                 <li>Email: ontrackbikeshare@gmail.com</li>
                 <li>Telephone: +254 797 123 456</li>
             </ul>
-
+        </div>
+        <div id="contact">
+            <h3>What we do</h3>
+            <ul>
+                <li>Consulting eVehicles</li>
+                <li>Fleet management</li>
+                <li>Maintenance and operations</li>
+            </ul>
         </div>
     </footer>
+    <h3 id="copyright">Copyright @ 2023 ontrackbikeshare</h3>
+    </section>
     
+
     <script src="index.js"></script>
+    <script src="new.js"></script>
 </body>
 </html>

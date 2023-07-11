@@ -1,4 +1,5 @@
-fetch("https://user-profiles-jgk3.onrender.com/users")
+
+fetch("https://ontrack-server.onrender.com/users")
 .then(response => response.json())
 .then(data => {
     console.log(data);
@@ -41,12 +42,7 @@ data.forEach((users) => {
     </div>
     <div id = "vehicle">
         <h1>
-            ${users.evehicle}
-        </h1>
-    </div>
-    <div id = "rating">
-        <h1>
-            ${users.rating}
+            ${users.eVehicle}
         </h1>
     </div>
     `
@@ -57,7 +53,7 @@ data.forEach((users) => {
 
 .catch(error => {
     console.log('Error:', error);
-})
+});
     const form = document.getElementById('registration');
     const name = document.getElementById('name');
     const username = document.getElementById('username');
@@ -66,6 +62,8 @@ data.forEach((users) => {
     const profilepicture = document.getElementById('profilepicture');
     const evehicle = document.getElementById('evehicle');;
     const submitbtn = document.getElementById('submit')
+
+
 // POST request
 
 // form.addEventListener('submit', formSubmit)
@@ -87,7 +85,7 @@ function formSubmit(e){
 }
 function newUserName(userObj){
 
-    fetch('https://user-profiles-jgk3.onrender.com/users', {
+    fetch('https://studentprofile.onrender.com/student', {
         method: 'POST', 
         headers:{
             'Content-Type': 'application/json'
@@ -97,3 +95,7 @@ function newUserName(userObj){
     .then(res => res.json())
     .then(userObj => console.log(userObj))
 }
+
+
+
+

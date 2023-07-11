@@ -1,5 +1,9 @@
+html{
+    scroll-behavior: smooth;
+}
 #body1{
     font-family: 'Comfortaa', cursive;
+    margin: 0;
 }
 #logo{
     font-size: 30px;
@@ -116,6 +120,9 @@ nav ul li:hover{
     text-align: center;
     color: #00dd00;
 }
+#section1{
+    background-color: #d5ffd5;
+}
 #section2 #app{
     margin-left: 200px;
 }
@@ -152,9 +159,6 @@ nav ul li:hover{
     align-items: center;
     justify-content: center;
     font-family: 'Comfortaa', cursive;
-}
-.form-hidden{
-    display: none;
 }
 #container{
     display: inline-flex;
@@ -308,4 +312,34 @@ nav ul li:hover{
 
 #registration-form, #userProfiles{
     height: 100vh;
+}
+
+/* styling the footer */
+
+#footer{
+    display: inline-flex;
+}
+#footer h3{
+    text-align: center;
+}
+
+#aboutus, #contact{
+    /* margin: 0 200px;  */
+    font-size: 10px;
+  
+}
+#aboutus li{
+    margin: 7.5px 0;
+}
+#contact li{
+    margin: 7.5px 0;
+}
+#section3{
+    background-color: #00dd00;
+}
+#copyright{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
 }

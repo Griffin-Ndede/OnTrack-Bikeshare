@@ -68,3 +68,40 @@
 //         console.log(data);
 //     });
 // });
+
+document.getElementById('registration').addEventListener('submit', formSubmit);
+
+function formSubmit(e) {
+    e.preventDefault();
+    let userObj = {
+        name: e.target.name.value,
+        username: e.target.username.value,
+        email: e.target.email.value,
+        gender: e.target.gender.value,
+        profilepicture: e.target.profilepicture.value,
+        evehicle: e.target.evehicle.value,
+    };
+    newUserName(userObj)
+        .then(response => {
+            console.log(response);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+}
+
+function newUserName(userObj) {
+    return fetch('https://ontrack-server.onrender.com/users', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(userObj)
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Request failed with status ' + response.status);
+            }
+            return response.json();
+        });
+}
