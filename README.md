@@ -16,7 +16,7 @@ Reference
 Licence
 
 # Description
-The program is supposed to display the bikeshare platform and its different features. Clicking on the navigation items takes you to the specific location of the navigation item. On the user profile page, clicking on a user's name opens the user's profile. There is also a registration form for new users. The sign in button takes you to the login page and clicking on the create account toggles between the login page and the create account page. 
+The program is supposed to display the bikeshare platform and its different features. Clicking on the navigation items takes you to the specific location of the navigation item. On the user profile page, clicking on a user's name opens the user's profile and displays the user details. There is also a registration form for new users. The sign in button takes you to the login page and clicking on the create account toggles between the login page and the create account page. 
 
 # Installation requirement
 Either a computer,phone,tablet or an Ipad
