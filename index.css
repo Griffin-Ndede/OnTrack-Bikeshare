@@ -21,7 +21,7 @@ nav{
     padding-right: 5%; 
 }
 nav ul{
-    margin-left: 400px;
+    margin-left: 300px;
 }
 nav ul li{
     display: inline-block;
@@ -30,22 +30,19 @@ nav ul li{
     cursor: pointer;
     font-size: 15px;
 }
-nav ul li #users{
+nav ul li a{
     text-decoration: none;
     color: black;
 }
-nav ul li #users:hover{
+nav ul li a:hover{
     color: #00dd00;
     cursor: pointer;
-}
-nav ul li:hover{
-    color: #00dd00;
-    cursor: pointer;
+    text-decoration: underline;
 }
 #sign-up{
     text-decoration: none;
     border-radius: 30px;
-    padding: 5px;
+    padding: 2px 7.5px;
     background-color: transparent;
     border: 1px solid black;
     color:black;
@@ -56,11 +53,7 @@ nav ul li:hover{
     background-color: #00dd00;
     border: transparent;
 }
-.material-icons{
-    color: blue;
-    font-size: 50px;
-    font-weight: lighter;
-}
+
 #page1 div img{
     margin-left: 400px;
     border-radius: 150px 50px;
@@ -111,6 +104,11 @@ nav ul li:hover{
     box-shadow: 5px 5px 10px black;
     font-family: 'Comfortaa', cursive;
 }
+#section1{
+    background-color: #d5ffd5;
+}
+
+/************************************styling for section 2*******************************/
 #page2 {
     display: inline-flex;
     width: 100%;
@@ -119,9 +117,6 @@ nav ul li:hover{
     font-size: 40px;
     text-align: center;
     color: #00dd00;
-}
-#section1{
-    background-color: #d5ffd5;
 }
 #section2 #app{
     margin-left: 200px;
@@ -137,7 +132,7 @@ nav ul li:hover{
 }
 #section2 #instructions h2{
     width: fit-content;
-    /* margin: 25px; */
+    margin: 25px;
     margin-left: 50px;
 }
 #section2 #instructions p{
@@ -153,14 +148,14 @@ nav ul li:hover{
 
 
 
-/* styling for login page */
+/*********************************** styling for login page ******************************/
 #body2{
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Comfortaa', cursive;
 }
-#container{
+#container1{
     display: inline-flex;
     font-size: 20px;
     width: 800px;
@@ -236,11 +231,16 @@ nav ul li:hover{
     text-align: center;
 }
 
-/* style for create account page */
+/**************************style for create account page *************************/
 #createaccount #title{
     font-size: 30px;
     color: black;
     margin-bottom: 20px;
+}
+#container{
+    display: inline-flex;
+    border-radius: 30px;
+    background-color:white;
 }
 #createaccount #error1,
 #error2, #error3{
@@ -292,41 +292,71 @@ nav ul li:hover{
 #createaccount p{
     font-size: 15px;
 }
-/* styling for user profiles page */
+/**************************** styling for user profiles page ***********************/
 
-#body1 h1{
+#registration input{
+    font-size:15px;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    border: transparent;
+    box-shadow: 0 0 10px black;
+    padding: 7.5px;
+}
+#registration #submit{
+    margin-top: 20px;
+}
+#section3{
+    height: 100vh;
+    margin: 0;
+    background-color: #d5ffd5;
+}
+#registration{
+    text-align: center;
+    padding: 10px;
+}
+#section3 h1{
+    text-align: center;
+    padding: 10px;
+}
+#section3 h1:hover{
+    color: #00dd00;
+}
+#usernames li{
+    margin: 15px;
+    font-size: 15px;
+    width: fit-content;
+}
+#usernames li:hover{
+    color: #00dd00;
+    cursor: pointer;
+}
+#userdisplays h1{
     font-size: 30px;
     font-weight: bolder;
     margin: 30px 0;
     text-align: center;
 }
-#body1 #usernames li{
-    margin: 15px;
-    font-size: 15px;
-    width: fit-content;
-}
-#body1 #usernames li:hover{
-    color: #00dd00;
-    cursor: pointer;
-}
-
-#registration-form, #userProfiles{
+#section3{
     height: 100vh;
+    margin: 0;
+    background-color: #d5ffd5;
 }
 
 /* styling the footer */
-
+#section4{
+    background-color: #00dd00;
+    color: white;
+    text-align: center;
+}
 #footer{
     display: inline-flex;
 }
-#footer h3{
-    text-align: center;
+#footer div{
+    margin: 0 50px;
 }
-
 #aboutus, #contact{
-    /* margin: 0 200px;  */
-    font-size: 10px;
-  
+    font-size: 15px;
 }
 #aboutus li{
     margin: 7.5px 0;
@@ -334,12 +364,14 @@ nav ul li:hover{
 #contact li{
     margin: 7.5px 0;
 }
-#section3{
-    background-color: #00dd00;
-}
 #copyright{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 15px;
     font-weight: lighter;
+    padding: 0 0 20px 0;
+    letter-spacing: 2px;
+}
+section4{
+    height: 25vh;
 }

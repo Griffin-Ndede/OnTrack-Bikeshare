@@ -3,8 +3,9 @@ register.addEventListener('click', (e) => {
 
     e.preventDefault()
 
-    const createAccount = document.getElementById('container')
+    const createAccount = document.getElementById('container1')
     const account = document.createElement('div')
+    account.setAttribute('id', 'container');
 account.innerHTML =`
 <form id="createaccount">
             <h1 id="title">Create account</h1>
@@ -30,7 +31,10 @@ account.innerHTML =`
             <p id="text">
                 <a href="" id="signin"> Already have an account? Sign in</a>
             </p>
-        </form>
+        </form>  
+        <div id="bike">
+            <img src="images/img_0100 (1).JPG" width="350px" height="auto" alt="ebike">
+        </div> 
 `
 createAccount.innerHTML ='';
 createAccount.appendChild(account)

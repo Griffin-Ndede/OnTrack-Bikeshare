@@ -17,33 +17,33 @@ data.forEach((users) => {
     const displayDetails = document.getElementById("usernames")
     const display1 = document.createElement("div")
     display1.innerHTML =`
-    <div id = "name">
-        <h1>
-            ${users.name}
-        </h1>
-    </div>
-    <div id = "username">
-        <h1>
-            ${users.username}
-        </h1>
-    </div>
-    <div id = "email">
-        <h1>
-            ${users.email}
-        </h1>
-    </div>
-    <div id = "gender">
-        <h1>
-            ${users.gender}
-        </h1>
-    </div>
     <div id = "pp">
         <img src= "${users.gender}" alt = "Profile picture">
     </div>
+    <div id = "name">
+        <h2>
+           Name: ${users.name}
+        </h2>
+    </div>
+    <div id = "username">
+        <h2>
+            Username: ${users.username}
+        </h2>
+    </div>
+    <div id = "email">
+        <h2>
+            Email: ${users.email}
+        </h2>
+    </div>
+    <div id = "gender">
+        <h2>
+            Gender: ${users.gender}
+        </h2>
+    </div>
     <div id = "vehicle">
-        <h1>
-            ${users.eVehicle}
-        </h1>
+        <h2>
+            Preferred vehicle: ${users.eVehicle}
+        </h2>
     </div>
     `
     displayDetails.innerHTML = display1.innerHTML
